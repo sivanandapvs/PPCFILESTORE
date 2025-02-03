@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7152029939:AAHDJAdOcyknY0mB0GCtGDQM7nb4YjvgZK8")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7198076492:AAEj4-fYl8u8D0G1Yydw9NxHsqwkZnfG3YU")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "29868868"))
@@ -29,10 +29,10 @@ PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://pvssivananda:0KWUZLzmRKC2zTBF@cluster0.gaxfh44.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DB_NAME = os.environ.get("DATABASE_NAME", "MBCFILES")
+DB_NAME = os.environ.get("DATABASE_NAME", "PPCFILES")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001968308293"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -46,7 +46,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>you need to join POCKET FM TELUGU BACKUP to get files\n\nKindly Please join Channel</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>you need to join BACKUP to get files\n\nKindly Please join Channel</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
